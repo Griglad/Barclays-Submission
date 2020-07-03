@@ -81,13 +81,13 @@ public class App {
 
             // Net Worth Value
             //
-            System.out.println("Net worth Value");
-            System.out.println(bs.getNetWorthValue());
+            System.out.println("----Net worth Value----");
+            System.out.println("NW:"+bs.getNetWorthValue());
 
             // SRWA
             //
             System.out.println("----SRWA----");
-            System.out.println("SRWA: " + bs.getSRWA());
+            System.out.println("SRWA:" + bs.getSRWA());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

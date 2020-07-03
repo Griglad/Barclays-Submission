@@ -35,11 +35,6 @@ public abstract class Product {
     }
 
 
-
-
-
-
-
     public void setAmount(String amount) {
 
         this.amount = new BigDecimal(amount);

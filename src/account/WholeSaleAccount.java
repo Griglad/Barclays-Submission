@@ -1,6 +1,4 @@
 package account;
-
-import account.Account;
 import product.Product;
 import product.Tier1Capital;
 

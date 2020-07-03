@@ -1,6 +1,6 @@
 package account;
 
-import account.Account;
+
 
 public class InternalAccount extends Account {
 
