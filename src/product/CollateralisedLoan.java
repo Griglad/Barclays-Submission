@@ -1,3 +1,7 @@
+package product;
+
+import util.ProductType;
+
 public class CollateralisedLoan extends Product {
 
     public CollateralisedLoan() {

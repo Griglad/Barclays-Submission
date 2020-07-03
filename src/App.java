@@ -1,3 +1,9 @@
+import account.InternalAccount;
+import account.WholeSaleAccount;
+import balancesheet.BalanceSheet;
+import product.*;
+import util.AccountProvider;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,7 +25,7 @@ public class App {
             Product product = new Tier1Capital();
             product.setAmount(10000000000L);
 
-            InternalAccount account = new InternalAccount(getRandomString());
+            InternalAccount account = new InternalAccount(AccountProvider.getRandomString());
             account.addProduct(product);
             account.open();
             bs.addAccount(account);
@@ -31,7 +37,7 @@ public class App {
             int max = 200000;
             int base = (max - min) + 1;
 
-            account = new InternalAccount(getRandomString());
+            account = new InternalAccount(AccountProvider.getRandomString());
             for (int i = 0; i < 10; i++) {
 
                 product = new CollateralisedLoan();
@@ -51,7 +57,7 @@ public class App {
 
             for (int i = 0; i < 10; i++) {
 
-                WholeSaleAccount whacc = new WholeSaleAccount(getRandomString() + 1);
+                WholeSaleAccount whacc = new WholeSaleAccount(AccountProvider.getRandomString());
 
                 product = new Cash();
                 product.setAmount(rand.nextInt(base) + min);
@@ -88,18 +94,7 @@ public class App {
     }
 
 
-    public static String getRandomString() {
-        int leftLimit = 97; // letter 'a'
-        int rightLimit = 122; // letter 'z'
-        int targetStringLength = 10;
-        Random random = new Random();
 
-        return random.ints(leftLimit, rightLimit + 1)
-                .limit(targetStringLength)
-                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
-                .toString();
-
-    }
 
 
 }

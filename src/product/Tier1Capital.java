@@ -1,3 +1,8 @@
+package product;
+
+import product.Product;
+import util.ProductType;
+
 public class Tier1Capital extends Product {
 
     public Tier1Capital() {

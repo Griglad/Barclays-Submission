@@ -1,3 +1,7 @@
+package product;
+
+import util.ProductType;
+
 import java.math.BigDecimal;
 
 public abstract class Product {

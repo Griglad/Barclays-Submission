@@ -1,3 +1,9 @@
+package account;
+
+import account.Account;
+import product.Product;
+import product.Tier1Capital;
+
 import java.math.BigDecimal;
 
 public class WholeSaleAccount extends Account {
@@ -21,7 +27,7 @@ public class WholeSaleAccount extends Account {
     public void open() throws Exception {
 
         if (getBalance().compareTo(new BigDecimal(35000)) < 0) {
-            throw new Exception("Account does not meet minimum balance of 35000 GBP");
+            throw new Exception("account.Account does not meet minimum balance of 35000 GBP");
         }
         super.open();
     }

@@ -1,3 +1,8 @@
+package account;
+
+import product.Product;
+import util.AccountState;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +56,7 @@ public abstract class Account {
 
     public void printInfo() {
 
-        System.out.println("*** Account " + this.id + " ----------------------");
+        System.out.println("***Account " + this.id + " ----------------------");
         products.forEach(Product::printInfo);
         System.out.println("-----------------------------------------");
 
