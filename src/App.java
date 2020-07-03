@@ -40,7 +40,7 @@ public class App {
             account = new InternalAccount(AccountProvider.getRandomString());
             for (int i = 0; i < 10; i++) {
 
-                product = new CollateralisedLoan();
+                product = new CollateralizedLoan();
                 product.setAmount(rand.nextInt(base) + min);
 
                 account.addProduct(product);
