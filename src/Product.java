@@ -19,9 +19,18 @@ public abstract class Product {
         this.amount = new BigDecimal(amount);
     }
 
+    public void setAmount(double amount) {
+        this.amount = BigDecimal.valueOf(amount);
+    }
+
     public void setAmount(long amount) {
 
-        this.amount = new BigDecimal(amount);
+        this.amount = BigDecimal.valueOf(amount);
+    }
+
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 
     public BigDecimal getAmount() {

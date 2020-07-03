@@ -16,8 +16,6 @@ public class App {
 
             // An Internal account containing 10 billion GBP
             // of Tier 1 capital.
-            //
-
             Product product = new Tier1Capital();
             product.setAmount(10000000000L);
 
@@ -47,7 +45,6 @@ public class App {
 
             // 10 Wholesale accounts, each holding a cash product of value between 10,000 and
             //100,000 GBP, also containing two bond products with values in the same range
-            //
             min = 10000;
             max = 100000;
             base = (max - min) + 1;
@@ -80,16 +77,11 @@ public class App {
             //
             System.out.println("Net worth Value");
             System.out.println(bs.getNetWorthValue());
-            System.out.println("----Net worth value----Length----");
-            System.out.println(bs.getNetWorthValue().toString().length());
 
             // SRWA
             //
             System.out.println("----SRWA----");
             System.out.println("SRWA: " + bs.getSRWA());
-            System.out.println("---SRWA-LENGTH---");
-            System.out.println(bs.getSRWA().toString().length());
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -108,7 +100,6 @@ public class App {
                 .toString();
 
     }
-
 
 
 }
