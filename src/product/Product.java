@@ -18,6 +18,28 @@ public abstract class Product {
         this.amount = BigDecimal.ZERO;
     }
 
+
+    public Product(String name,ProductType type, int riskRating,BigDecimal amount){
+        this(name,type,riskRating);
+        this.amount = amount;
+    }
+
+    public Product(String name,ProductType type, int riskRating,double amount){
+        this(name,type,riskRating);
+        this.amount = BigDecimal.valueOf(amount);
+    }
+
+    public Product(String name,ProductType type, int riskRating,long amount){
+        this(name,type,riskRating);
+        this.amount = BigDecimal.valueOf(amount);
+    }
+
+
+
+
+
+
+
     public void setAmount(String amount) {
 
         this.amount = new BigDecimal(amount);
